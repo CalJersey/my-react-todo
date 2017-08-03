@@ -1,0 +1,33 @@
+Sprint 0
+-create new react app instance
+-start up client side app server
+-set default contents of App main page to display Hello World
+
+Sprint 1
+-create routes file in config directory
+-set route for root URL "/"
+-setup index.js to render elements inside Router component
+-create custom header component, render it at top of app component
+
+Sprint 2
+-create Todo Container component
+-add route to todo container to routes.js at "/todos"
+-add {this.props.children} to return of App.js render function. This will
+  render all app sub-components as defined by routes.js nested hierarchy
+-add css
+
+Sprint 3
+-set up models file structure
+-add Todos model file
+-create Todos model with static "all" method which uses ajax to call super-crud api
+  and set promise/response into "request"
+-Create call to model's all function in Todos Container and output response to console
+-create todo component to display individiual todos
+-test display with static todo
+-create todoList component which iterates over an array of todos creating a todo object
+  for each item in the array
+-create static array of todos in todo container to test todo list functionality
+-add a constructor to todos container which initializes its state with an empty array of todos
+-add this.fetchData() to componentDidMount method (will fire once component renders the first time)
+-add fetchData method which calls todoModel.all and updates state with "{todos: res.todos}"
+-replace static todo list in render function with the todos array from this component's state

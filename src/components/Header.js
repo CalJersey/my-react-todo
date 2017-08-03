@@ -6,6 +6,7 @@ class Header extends Component{
     return (
       <header>
         <h1><Link to={'todos'}>React Todos</Link></h1>
+          <h1><Link to={'wines'}>Wine List</Link></h1>
       </header>
     )
   }

@@ -23,6 +23,7 @@ class TodosContainer extends Component {
   render() {
     return (
         <div className='todosContainer'>
+          <CreateTodosForm />
           <TodoList
             todos={this.state.todos} />
         </div>
