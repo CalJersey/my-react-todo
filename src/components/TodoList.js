@@ -9,7 +9,8 @@ class TodoList extends Component {
         <Todo
           key={todo._id}
           todo={todo}
-        />
+          onDeleteTodo={this.props.onDeleteTodo}
+          onUpdateTodo={this.props.onUpdateTodo} />
       )
     })
     return(
